@@ -18,33 +18,33 @@
 
 
 ```
-⭕️**help**
-    🔰**__join :__**  `!join|link or id`
+⭕️help
+    🔰join : !join|link or id
     example:
-    `!join|https://t.me/joinchat/VRSmq`
-    `!join|webamoozir`
-    `+-------------------------------+`
-    🔰**__leave :__**  `!leave|link or id`
+    !join|https://t.me/joinchat/VRSmq
+    !join|webamoozir
+    +-------------------------------+
+    🔰leave : !leave|link or id
     example:
-    `!leave|https://t.me/joinchat/VRSmq`
-    `!leave|webamoozir`
-    `+-------------------------------+`
-    🔰**__add to blacklist :__**  `!addword|word`
+    !leave|https://t.me/joinchat/VRSmq
+    !leave|webamoozir
+    +-------------------------------+
+    🔰add to blacklist : !addword|word
     example:
-    `!addword|bet`
-    `!addword|gamble`
-    `+-------------------------------+`
-    🔰**__show blacklist :__**  `!blacklist`
+    !addword|bet
+    !addword|gamble
+    +-------------------------------+
+    🔰show blacklist :!blacklist
     example:
-    `!blacklist`
-    `+-------------------------------+`
-    🔰**__remove from blacklist :__**  `!rmword|word`
+    !blacklist
+    +-------------------------------+
+    🔰remove from blacklist : !rmword|word
     example:
-    `!rmword|bet`
-    `!rmword|gamble`
-    `+-------------------------------+`
-    🔰**__show Links :__**  `!links`
+    !rmword|bet
+    !rmword|gamble
+    +-------------------------------+
+    🔰show Links : !links
     example:
-    `!links`
-    `+-------------------------------+
+    !links
+    +-------------------------------+
 ```
