@@ -13,4 +13,38 @@
 10. now you can run your own containers;
 11. use this command for running a container`docker run -d -p 8000:8000 antibet:latest`
 12. this app will make an api for accessing gatherd link in `localhost:8000/links` 
-13. have fun 🎈 
+13. after running the container send `!help` command to any private chat(saved messages for example) the robot will respond with all the available commands
+14. have fun 🎈 
+
+
+```
+⭕️**help**
+    🔰**__join :__**  `!join|link or id`
+    example:
+    `!join|https://t.me/joinchat/VRSmq`
+    `!join|webamoozir`
+    `+-------------------------------+`
+    🔰**__leave :__**  `!leave|link or id`
+    example:
+    `!leave|https://t.me/joinchat/VRSmq`
+    `!leave|webamoozir`
+    `+-------------------------------+`
+    🔰**__add to blacklist :__**  `!addword|word`
+    example:
+    `!addword|bet`
+    `!addword|gamble`
+    `+-------------------------------+`
+    🔰**__show blacklist :__**  `!blacklist`
+    example:
+    `!blacklist`
+    `+-------------------------------+`
+    🔰**__remove from blacklist :__**  `!rmword|word`
+    example:
+    `!rmword|bet`
+    `!rmword|gamble`
+    `+-------------------------------+`
+    🔰**__show Links :__**  `!links`
+    example:
+    `!links`
+    `+-------------------------------+
+```
