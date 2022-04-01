@@ -1,0 +1,8 @@
+config.ini
+*.session
+*.session-journal
+__pycache__
+*.exe
+*.db
+config-secret.ini
+test.py
