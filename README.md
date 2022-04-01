@@ -1,5 +1,5 @@
 # AntiBet
-
+![stop](https://raw.githubusercontent.com/aminGhafoory/AntiBet/main/stop.jpeg?token=GHSAT0AAAAAABSTKY5OFEWUJQASROJW4NX4YSG6CJA)
 ## How To USe
 1. visit [telegram](https://my.telegram.org/auth?to=apps) website and get a api-hash and api-key
 2. Replace api_id and api_hash values with your own in `config.ini` file (without quotes).
