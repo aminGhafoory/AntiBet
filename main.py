@@ -173,7 +173,10 @@ async def link_finder(client, message):
         if is_present(conn=conn, table_name=blacklist_table_name, word=word):
             links = re.findall(url_regex, raw_text)
             channel_username = message.chat.username
-            await message.forward(archive_chanenl)
+            try:
+                await message.forward(archive_chanenl)
+            except:
+                pass
             for link in links:
                 c.execute(
                     f"""INSERT OR IGNORE INTO {links_table_name} (channel_username,link) VALUES(?,?);""",
@@ -201,7 +204,10 @@ async def link_finder_2(client, message):
         )
         for word in raw_text.split(" "):
             if is_present(conn=conn, table_name=blacklist_table_name, word=word):
-                await message.forward(archive_chanenl)
+                try:
+                    await message.forward(archive_chanenl)
+                except:
+                    pass
                 for link in links:
                     c.execute(
                         f"""INSERT OR IGNORE INTO {links_table_name} (channel_username,link) VALUES(?,?);""",
