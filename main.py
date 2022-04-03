@@ -13,6 +13,7 @@ api_hash = config["user"]["api_hash"]
 phone_number = config["user"]["phone_number"]
 device_model = config["user"]["device_model"]
 bot_admin = config["user"]["admin"]
+archive_chanenl = config["user"]["archive_channel"]
 
 data_base_name = config["db"]["data_base_name"]
 blacklist_table_name = config["db"]["blacklist_table_name"]
@@ -172,6 +173,7 @@ async def link_finder(client, message):
         if is_present(conn=conn, table_name=blacklist_table_name, word=word):
             links = re.findall(url_regex, raw_text)
             channel_username = message.chat.username
+            await message.forward(archive_chanenl)
             for link in links:
                 c.execute(
                     f"""INSERT OR IGNORE INTO {links_table_name} (channel_username,link) VALUES(?,?);""",
@@ -199,6 +201,7 @@ async def link_finder_2(client, message):
         )
         for word in raw_text.split(" "):
             if is_present(conn=conn, table_name=blacklist_table_name, word=word):
+                await message.forward(archive_chanenl)
                 for link in links:
                     c.execute(
                         f"""INSERT OR IGNORE INTO {links_table_name} (channel_username,link) VALUES(?,?);""",
