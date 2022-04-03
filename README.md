@@ -4,7 +4,7 @@
 1. visit [telegram](https://my.telegram.org/auth?to=apps) website and get a api-hash and api-key
 2. Replace api_id and api_hash values with your own in `config.ini` file (without quotes).
 3. replace your id (username) as robot admin in `config.ini` file
-4. replcae your phone number in `config.ini` file
+4. replace your phone number in `config.ini` file
 5. changing other setting is not necessery
 6. run this command `$ chmod +x wrapper.sh`(in linux machine or WSL)
 7. run this command and login to your  telegram account`$ ./wrapper.sh`
