@@ -5,16 +5,17 @@
 2. Replace api_id and api_hash values with your own in `config.ini` file (without quotes).
 3. replace your id (username) as robot admin in `config.ini` file
 4. replace your phone number in `config.ini` file
-5. changing other setting is not necessery
-6. run this command `$ chmod +x wrapper.sh`(in linux machine or WSL)
-7. run this command and login to your  telegram account`$ ./wrapper.sh`
-8. you can use this application just like this but if you want to dockerize it follow next steps
-9. build an image with all of newly generated files using this command `docker build -t antibet:latest .`
-10. now you can run your own containers;
-11. use this command for running a container`docker run -d -p 8000:8000 antibet:latest`
-12. this app will make an api for accessing gatherd link in `localhost:8000/links` 
-13. after running the container send `!help` command to any private chat(saved messages for example) the robot will respond with all the available commands
-14. have fun 🎈 
+5. replace your channel for archival without @(your bot should ne admin in this channel) 
+6. changing other setting is not necessery
+7. run this command `$ chmod +x wrapper.sh`(in linux machine or WSL)
+8. run this command and login to your  telegram account`$ ./wrapper.sh`
+9. you can use this application just like this but if you want to dockerize it follow next steps
+10. build an image with all of newly generated files using this command `docker build -t antibet:latest .`
+11. now you can run your own containers;
+12. use this command for running a container`docker run -d -p 8000:8000 antibet:latest`
+13. this app will make an api for accessing gatherd link in `localhost:8000/links` 
+14. after running the container send `!help` command to any private chat(saved messages for example) the robot will respond with all the available commands
+15. have fun 🎈 
 
 
 ```
